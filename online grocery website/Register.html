@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .logo img{
+width: 200px;
+}
+.navbar{
+background-color: chocolate;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.nav-links{
+display: flex;
+list-style: none;
+width: 600px;
+justify-content: space-between;
+margin-right: 30px;
+}
+.nav-links a{
+text-decoration: none;
+font-size: 20px;
+font-family: sans-serif;
+font-weight: bold;
+color: black;
+}
+        body{
+            background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./Image/image2.jpg);
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: auto;
+            margin: 0%;
+        }
+        .register{
+            width: 360px;
+            padding:10%;
+            margin: auto;
+        }
+        .form1{
+            position: relative;
+            background: rgba(15, 20, 120, 0.5);
+            z-index: 1;
+            max-width: 369px;
+            margin: 0 auto 100px;
+            padding: 45px;
+            text-align: center;
+            border-radius: 40px;
+        }
+        .register-form input{
+            font-family: "Roboto",sans-serif;
+            outline: 1;
+            background:#f2f2f2;
+            width:100%;
+            border: 0;
+            margin: 0 0 15px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+
+        }
+        .form1 button{
+            font-family: "Roboto",sans-serif;
+            text-transform: uppercase;
+            outline: 0;
+            background: #4CAF50;
+            width: 100%;
+            padding: 15px;
+            color: #ffffff;
+            font-size: 20px;
+            border-radius: 50px;
+        }
+        .register-form h2{
+            font-size: 30px;
+            color: #ffffff;
+        }
+        .form1 button:hover,.form1 button:active{
+            background: #e207073a;
+        }
+        .register-form .message{
+            color: #f2f2f2;
+
+        }
+        .form1 .message a{
+            color: bisque;
+            text-decoration: none;
+            padding: 10px;
+
+        }
+      
+        </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="Image/logo.png"  hight="100" alt="logo">
+
+        </div>
+             <div class="nav-links">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="About.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="service.html">SERVICES</a>
+                </li>
+                <li>
+                    <a href="Contact.html">CONTACT</a>
+                </li>
+                <li>
+                    <a href="login.html">LOGIN</a>
+                </li>
+
+             </div>
+        
+    </div>
+</div>
+    <div class="register">
+       <div class="form1">
+        <form class="register-form">
+            <h2>Fill your Details</h2>
+            <input type="text" placeholder="Name"/>
+            <input type="password" placeholder="password"/>
+            <input type="text" placeholder="Confirm Password"/>
+            <input type="text" placeholder="Email"/>
+            <input type="number" placeholder="Pnone Number"/>
+            <input type="text" placeholder="Full Address"/>
+            <input type="number" placeholder="Pin code"/>
+            <button>Create Account</button>
+            <p class="message">Already Register<a href="login.html">Login</a> </p>
+        </form >
+       </div>
+    </div>
+    
+</body>
+</html>

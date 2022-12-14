@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="icon" href="Image/titlelogo.jfif" href="/style.css">
+    <style>
+          *{
+    margin: 0px;
+          }
+        .hd h1{
+            color: rgb(240, 229, 234);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 50px;
+            display: flex;
+            
+            align-items: center;
+        
+        }
+        .hd{
+            background-image: url(./Image/veg.jpg);
+            height: 60vh;
+            background-repeat: no-repeat ;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            text-align: center;
+    
+        }
+        img{
+            display: flex;
+            size: 30px;
+            image-resolution: 30;
+
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns:auto auto auto auto;
+            grid-column-gap: 15px;
+            background-color: aquamarine;
+            width: 100%;
+            margin: auto;
+            margin-top: 20px;
+            padding-top: 10px;
+           
+        }
+        .gallery img{
+            width: 300px;
+            height: 200px;
+            border-radius: 20px;
+            transition-property: transform;
+            transition-duration: 1s;
+        
+        }
+        .gallery img:hover{
+            transform: scale(0.9 );
+        }
+        .gal-had{
+            text-align: center;
+            color: rgb(241, 243, 242);
+            background-color: black;
+        }
+        .logo img{
+        width: 200px;
+        }
+        .navbar{
+        background-color: chocolate;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        .nav-links{
+        display: flex;
+        list-style: none;
+        width: 600px;
+        justify-content: space-between;
+        margin-right: 30px;
+        }
+        .nav-links a{
+        text-decoration: none;
+        font-size: 20px;
+        font-family: sans-serif;
+        font-weight: bold;
+        color: black;
+        }
+
+        @media(max-width:560px)
+        {
+            .gallery{
+            display: grid;
+            grid-template-columns:auto auto auto auto;
+            grid-column-gap: 15px;
+            background-color: aquamarine;
+            width: 85%;
+            margin: auto;
+            margin-top: 20px;
+            padding-top: 10px;
+           
+        }
+
+
+
+        .gallery img{
+            display: block;
+            margin: auto;
+        
+        }
+
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="Image/logo.png"  hight="100" alt="logo">
+        </div>
+             <div class="nav-links">
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="About.html">ABOUT</a>
+                </li>
+                <li>
+                    <a href="service.html">SERVICES</a>
+                </li>
+                <li>
+                    <a href="Contact.html">CONTACT</a>
+                </li>
+                <li>
+                    <a href="login.html">LOGIN</a>
+                </li>
+
+             </div>
+        
+    </div>
+    
+    <div class="hd">
+        <h1>Always Eat Fresh Vegetables</h1>
+    </div>
+    <h1 class="gal-had">FRESH VEGETABLES</h1>
+    <div class="gallery">
+            <div class="gal-1">
+            <a href="Lauki.html"><img src="Image/lauki.webp"></a>
+            <h3 align="center">Lauki</h3> <h2 align="center">Rs.35</h2>
+            </div>
+    
+            <div class="gal-2">
+            <img src="Image/brinjal.jfif">
+            <h3 align="center">Brinjal</h3><h2 align="center">Rs.30</h2>
+            </div>
+    
+            <div class="gal-3">
+            <img src="Image/cauli.jpg">
+            <h3 align="center">CauliFlower</h3> <h2 align="center">Rs.45</h2>
+            </div>
+    
+            <div class="gal-4">
+            <img src="Image/dark leaf.jfif">
+            <h3 align="center">Green Leaf</h3> <h2 align="center">Rs.25</h2>
+            </div>
+    
+            <div class="gal-5">
+            <img src="Image/lady.jpg">
+            <h3 align="center">Ladyfinger</h3><h2 align="center">Rs.15</h2>
+            </div>
+    
+            <div class="gal-6">
+            <img src="Image/tamato.jpg">
+            <h3 align="center">Tamato</h3><h2 align="center">Rs.105</h2>
+            </div>
+    
+            <div class="gal-7">
+            <img src="Image/patato.jpg">
+            <h3 align="center">Patato</h3 ><h2 align="center">Rs.30</h2>
+            </div>
+    
+            <div class="gal-8">
+            <img src="Image/pea.jfif">
+            <h3 align="center">Pea</h3><h2 align="center">Rs.70</h2>
+            </div>
+
+    </div>
+</body>
+</html>

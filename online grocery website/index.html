@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WelCome to Grocery Store</title>
+    <link rel="icon" href="./grocerylogo.jpeg" href="/style.css">
+    <!--<link rel="stylesheet" href="/style.css">--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+    margin: 0px;
+}
+
+a{
+color: brown;
+}
+.logo img{
+width: 200px;
+}
+.navbar{
+background-color: chocolate;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.nav-links{
+display: flex;
+list-style: none;
+width: 600px;
+justify-content: space-between;
+margin-right: 30px;
+}
+.nav-links a{
+text-decoration: none;
+font-size: 20px;
+font-family: sans-serif;
+font-weight: bold;
+color: black;
+}
+.header{
+background-image: url(./Image/image2.jpg);
+height:100vh;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+text-align: center;
+
+align-items: center;
+}
+.header h1{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 30px;
+text-transform: uppercase;
+text-align: center;
+color: rgb(240, 12, 149);
+text-shadow: 5px 5px greenyellow;
+}
+.header a{
+    background-color: rgb(20, 19, 19);
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    color: aliceblue;
+  }
+
+.header h2{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 30px;
+text-transform: uppercase;
+text-align: center;
+color: rgb(239, 234, 234);
+text-shadow: 5px 5px rgb(8, 8, 7);
+padding-top: 400px;
+margin-bottom: 40px;
+animation: blink 2s linear infinite;
+}
+@keyframes blink{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
+.header h3{
+    text-align: center;
+    padding-top: 30px;
+    color: aliceblue;
+    font-family: sans-serif;
+    font-weight: bold;
+ 
+  
+}
+
+.menu{
+display: flex;
+justify-content:flex-start; 
+height: 44vh;
+
+
+}
+.menu img{
+width: 300px;
+border-radius: 40px;
+height: 200px;
+
+}
+.menu-head{
+padding-top: 50px;
+padding-bottom: 40px;
+font-size: 40px;
+text-align: center;
+text-shadow: 5px 5px greenyellow;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.menu .item1,.item2, .item3, .item4{
+border: 5px solid black;
+background-color: rgb(204, 158, 248);
+width: 500px;
+justify-content:center;
+}
+.why{
+    text-align: center;
+    color: blue;
+    margin-top: 50px;
+    text-decoration: wavy;
+}
+.why h1{
+    align-items: center;
+    text-decoration: dotted;
+    text-decoration: underline;
+    text-shadow: 5px 2px rgb(233, 233, 26);
+    background-color: rgb(117, 240, 209);
+}
+.why-p pre{
+    margin-left: 10px;
+
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(249, 71, 6);
+    padding: 20px;;
+}
+.why-img{
+    display: flex;
+    justify-content:flex-start; 
+    height: 50vh;
+    align-items: center;
+    
+}
+.why-img img{
+    align-items: center;
+    display: flex;
+    align-content: center;
+    margin-top: 500px;
+}
+.why-p .why1, .why2{
+    border: 5px solid black;
+    background-color: rgb(222, 194, 248);
+    width: auto;
+    justify-content:center;
+    align-items: center;
+}
+.why2{
+    align-items: center;
+    align-content: center;
+    background-color: rgb(246, 116, 198);
+}
+.why2 img{
+    align-self: center;
+    align-content: center;
+    margin-left: 500px;
+}
+
+.footer{
+background-color: rgb(215, 235, 235);
+height: 200px;
+text-align: center;
+color: rgb(10, 10, 9);
+font-family:cursive;
+font-size:x-small;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.icon {
+background-color: brown;
+display: flex;
+justify-content: space-between;
+}
+.icons i{
+    font-size: 35px;
+}
+
+.icons{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*mobile*/
+@media(max-width:560px) and (max-width:300px)
+{
+    .header{
+    background-image: url(./gr2.jpg);
+    height:100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+
+    align-items: center;
+    }
+
+    .header h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(240, 12, 149);
+    text-align: center;
+   
+    }
+
+    .header a{
+        background-color: rgb(9, 9, 9);
+        font-size: 30px;
+    }
+    .menu{
+  
+    justify-content:flex-start; 
+    height: 180vh;
+    margin-top: 400px;
+    align-items: center;
+    justify-items: auto;
+    flex-direction: column;
+
+    }
+
+    .menu img{
+    width: 300px;
+    border-radius: 40px;
+    height: 200px;
+    align-items: center;
+    align-items: center;
+    }
+
+    a{
+color: brown;
+}
+.logo img{
+width: 200px;
+}
+.navbar{
+background-color: chocolate;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.nav-links{
+
+list-style: none;
+width: 600px;
+justify-content: space-between;
+margin-right: 30px;
+}
+.nav-links a{
+text-decoration: none;
+font-size: 8px;
+font-family: sans-serif;
+font-weight: bold;
+color: black;
+
+}
+
+
+}
+
+ @media(min-width:577px) and (max-width:768px)
+ {
+     
+   
+}
+/*Tab*/
+ @media(min-width:992px) and (max-width:1199px){
+  
+}
+
+/*Desktop*/
+@media(min-width:1200px) and (max-width:1400px){
+  
+}
+@media(min-width:1401px){
+}
+
+</style>
+
+</head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="./grocerylogo.jpeg"  hight="100" alt="logo">
+
+            </div>
+                 <div class="nav-links">
+                    <li>
+                        <a href="index1.html">HOME</a>
+                    </li>
+                    <li>
+                        <a href="About.html">ABOUT</a>
+                    </li>
+                    <li>
+                        <a href="service.html">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="Contact.html">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="login.html">LOGIN</a>
+                    </li>
+
+                 </div>
+            
+        </div>
+        <div class="header">
+            <h1><marquee behavior="" direction="">Eat Fresh and be Healthy</marquee> </h1>
+             <div>
+                 <h2 class="blink">Order Now get Discount ! ! ! ! ! ! ! !</h2>
+             </div>
+                 <a class="order" href="Order.html">ORDER</a>
+        
+            </div>
+        <div>
+            <h1 class="menu-head">
+                OUR DAILY SERVICES
+            </h1>
+        </div>
+        <div class="menu">
+
+            <div class="item1">
+                <h1 align="center">Free Delivery</h1>
+                <img src="Image/item1.jpg">
+                
+            </div>
+
+
+            <div class="item2">
+                <h1 align="center">Spices</h1>
+                <img src="./fresh.jpg">
+                
+            </div>
+
+
+            <div class="item3">
+                <h1 align="center">Safety and Secure</h1>
+                <img src="Image/item3.jfif">
+            </div>
+
+            <div class="item4">
+                <h1 align="center">Organic</h1>
+                <img src="Image/item4.jfif">
+            </div>
+
+        </div>
+
+       <div class="why">
+            <h1>WHY Grocery Store</h1>
+        </div> 
+        <div class="why-p">
+            <div class="why1">
+            <p><pre>
+- We're farmers ourselves.
+- We get our hands dirty, so that clean eating and healthy living is made more
+  accessible.
+
+- We grow with our farmers.
+- We strive to nurture an equitable balance between our farmers and customers.
+
+- We have nothing to hide.
+- We see sincerity and honesty as essential values, which is why 
+  we're transparent about the way we work.
+
+- We hope to change the way food grows.
+- We, along with others world over, are sowing the seed for a much-needed global 
+  shift to sustainable farming.And we hope you join us on this journey.
+</pre> </p></div>
+        <div class="why2">
+             <img src="./grocerylogo.jpeg">
+        </div>
+        </div>
+        <div class="footer">
+               <h1>
+                &copy; Resistered Site dont copy it
+                </h1>
+                <h1>
+                    Copyright are reserved!!!!!!!!
+                </h1>
+
+             <div class="icons">
+
+            <a href="https://www.facebook.com/sanjay.kushwaha.395017/"><i class="fa-brands fa-instagram-square"></i></a>  
+            <a href="https://www.facebook.com/sanjay.kushwaha.395017/"> <i class="fa-brands fa-facebook-square"></i></a> 
+            <a href="twitter.com"> <i class="fa-brands fa-twitter-square"></i></a> 
+            
+            </div>
+
+        </div>
+    </body>
+</html>
